@@ -1,7 +1,8 @@
-import { Router, Request, Response } from "express";
+import { Router } from "express";
+import { createBook } from "../controllers/CreateBook.controllers";
 
 const router = Router();
 
-router.get("/");
+router.post("/createBook", createBook);
 
 export default router;
